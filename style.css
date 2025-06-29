@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+ font-family: "Outfit", sans-serif;
+
+}
+:root {
+  --lightblue-500: hsl(215, 51%, 70%);
+  --cyan-400: hsl(178, 100%, 50%);
+  --darkblue-950: hsl(217, 54%, 11%);      
+  --blue-900: hsl(216, 50%, 16%);     
+  --mediumblue-800: hsl(215, 32%, 27%);     
+  --white: hsl(0, 0%, 100%);
+}
+
+body  {
+    height: 100vh;
+     margin: 0;
+ padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--darkblue-950);
+    margin: 0 1rem;
+   flex-direction: column;
+   
+  
+
+
+}
+.card {
+     width: 100%;
+  max-width: 375px;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--blue-900);
+  display: flex;
+  flex-direction:column;
+  padding: 2rem;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+.imgg {
+    height: 19rem;
+    border-radius: 0.8rem;
+    border: none;
+        width: 100%;
+    height: auto;
+
+}
+
+.matter p{
+    font-size: 18px;
+    font-weight: 200;
+    color: var(--lightblue-500);
+   
+}
+.icons{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+   
+  
+
+}
+.eth-value{
+    color: var(--cyan-400);
+}
+.time-left {
+color: var(--lightblue-500);
+
+}
+
+.eth, .Clock{
+    display: flex;
+    gap: 0.4rem;
+}
+.jul {
+     height: 3rem;
+     width: 3rem;
+    border-radius: 0.8rem;
+    border: none;
+       
+
+}
+.profile {
+
+    display: flex;
+    gap: 1rem;
+}
+hr {
+    border: none;          
+border-top: 1px solid; var(--white);
+opacity: 0.5;
+    margin: 1.5rem 0;    
+}
+.creator-label {
+color: var(--lightblue-500);
+}
+.creator-name a{
+    color: var(--white);
+    text-decoration: none;
+    cursor: pointer;
+}
+.creator-name a:hover{
+    color: var(--cyan-400);
+}
+.matter a {
+  color: var(--white);
+  text-decoration: none;
+     cursor: pointer;
+}
+.matter a:hover {
+  color: var(--cyan-400);
+}
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: var(--lightblue-500);
+     text-decoration: none; }
+  
+        .attribution {
+            display: flex;
+            align-items: end;
+            text-decoration: none;
+padding-top: 2rem;
+
+        }
+    .challenge-label {
+  color: var(--white);    
+        
+}
+
+
+
+
+@media (min-width:1440px) {
+
+.imgcon {
+  position: relative;
+  width: 100%;
+  border-radius: 0.8rem;
+  overflow: hidden; /* Ensures overlay and image corners are rounded */
+}
+
+.imgg {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.8rem;
+}
+
+.overlay {
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: hsla(178, 100%, 50%, 0.5); /* Cyan overlay with transparency */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;                  /* Hidden by default */
+  transition: opacity 0.3s ease;
+  cursor: pointer;
+}
+
+.overlay img {
+  width: 48px;                 /* Adjust icon size as needed */
+  height: 48px;
+}
+
+.imgcon:hover .overlay {
+  opacity: 1;                  /* Show overlay and icon on hover */
+}
+
+
+
+
+
+
+}
